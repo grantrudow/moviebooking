@@ -99,7 +99,7 @@ struct MovieCollectionView: UIViewRepresentable {
                 }
             default:
                 if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ActorCell.reuseId, for: indexPath) as? ActorCell {
-                    cell.actor = parent.allItems[HomeSection.Trending]?[indexPath.item] as? Actor
+                    cell.actor = parent.allItems[HomeSection.Actors]?[indexPath.item] as? Actor
                     
                     return cell
                 }
