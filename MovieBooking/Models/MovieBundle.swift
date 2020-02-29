@@ -6,11 +6,9 @@
 //  Copyright © 2020 Liquidcoder. All rights reserved.
 //
 
-import Foundation
 import SwiftUI
 
 struct MovieBundle: Codable, Hashable {
-    
     let trending: [Trending]
     let popular: [Popular]
     let actors: [Actor]
@@ -18,7 +16,6 @@ struct MovieBundle: Codable, Hashable {
 }
 
 protocol Movie: Codable, Hashable {
-    
     var id: Int { get }
     var title: String { get }
     var releaseDate: String { get }
@@ -30,60 +27,60 @@ protocol Movie: Codable, Hashable {
     var studio: String? { get }
 }
 
-// MARK: - Trending
 
+// MARK: - Trending
 struct Trending: Movie {
     let id: Int
     let title, releaseDate, description, image: String
     let rating: Double
     let genres: [String]
     let runtime: String
-    let studio: String? = ""
+    var studio: String? = ""
     
-    static var `default`: Trending {
+    static var `default`: Trending{
         .init(id: 0, title: "", releaseDate: "", description: "", image: "", rating: 0, genres: [], runtime: "", studio: "")
     }
 }
 
-// MARK: - Actor
 
+// MARK: - Actor
 struct Actor: Codable, Hashable {
     let id: Int
     let name, bio, image: String
     
-    static var `default`: Actor {
+    static var `default`: Actor{
         .init(id: 0, name: "", bio: "", image: "")
     }
+
 }
 
-
-//MARK: - Popular
-
+// MARK: - Popular
 struct Popular: Movie {
     let id: Int
     let title, releaseDate, description, image: String
     let rating: Double
     let genres: [String]
     let runtime: String
-    let studio: String? = ""
+    var studio: String? = ""
     
-    static var `default`: Popular {
+    static var `default`: Popular{
         .init(id: 0, title: "", releaseDate: "", description: "", image: "", rating: 0, genres: [], runtime: "", studio: "")
     }
+
 }
 
-
-//MARK: - Upcoming
-
+// MARK: - Upcoming
 struct Upcoming: Movie {
     let id: Int
     let title, releaseDate, description, image: String
     let rating: Double
     let genres: [String]
     let runtime: String
-    let studio: String? = ""
+    var studio: String? = ""
     
-    static var `default`: Upcoming {
+    static var `default`: Upcoming{
         .init(id: 0, title: "", releaseDate: "", description: "", image: "", rating: 0, genres: [], runtime: "", studio: "")
     }
 }
+
+
