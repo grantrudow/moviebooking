@@ -7,13 +7,14 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
-struct MovieListRow<T: Movie>: View {
+struct MovieListRow: View {
     
-    var movie: T
+    var movie: MovieViewModel
     
     fileprivate func createImage() -> some View {
-        return Image(uiImage: UIImage(named: "\(movie.image).jpg") ?? UIImage() )
+        return KFImage(source: .network(movie.posterUrl))
             .resizable()
             .aspectRatio(contentMode: .fit)
             .cornerRadius(20)
@@ -32,7 +33,7 @@ struct MovieListRow<T: Movie>: View {
             
             VStack(alignment: .leading) {
                 createTitle()
-                LineRatingView(value: movie.rating)
+                LineRatingView(value: movie.voteAverage)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()

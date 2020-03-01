@@ -8,15 +8,16 @@
 
 import Foundation
 import UIKit
+import KingfisherSwiftUI
 
 class UpcomingCell: UICollectionViewCell {
     static let reuseId: String = "UpcomingCell"
-    var upcoming: Upcoming?{
+   
+    var movie: MovieViewModel?{
         didSet{
-            if let upcoming = self.upcoming {
-                imageView.image = UIImage(named: "\(upcoming.image)_land.jpg")
-                titleLabel.text = upcoming.title
-                releaseDateLabel.text = upcoming.releaseDate
+            if let movie = self.movie {
+                imageView.kf.setImage(with: movie.posterUrl)
+                titleLabel.text = movie.title
             }
         }
     }

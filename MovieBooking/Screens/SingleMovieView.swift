@@ -7,24 +7,26 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
-struct SingleMovieView<T: Movie>: View {
+struct SingleMovieView: View {
     
-    var movie: T
+    var movieId: Int = 1
+    
+    @ObservedObject var model = MovieListingViewModel()
     
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
                 createPosterImage()
-                MovieDetailView(movie: self.movie)
+                MovieDetailView(movie: self.model.movie)
             }
         }
         .edgesIgnoringSafeArea(.top)
     }
     
-    //making file generic
     fileprivate func createPosterImage() -> some View {
-        return Image(uiImage: UIImage(named: "\(movie.image).jpg") ?? UIImage())
+        return KFImage(source: .network(model.movie.posterUrl))
             .resizable()
             .aspectRatio(contentMode: .fit)
     }
@@ -36,6 +38,6 @@ struct SingleMovieView<T: Movie>: View {
 
 struct SingleMovieView_Previews: PreviewProvider {
     static var previews: some View {
-        SingleMovieView<Popular>(movie: Popular.default)
+        SingleMovieView()
     }
 }

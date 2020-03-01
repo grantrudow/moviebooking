@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct SeatsChoiceView<T: Movie>: View {
+struct SeatsChoiceView: View {
     
-    var movie: T
+    var movie: MovieViewModel
     
     @State private var selectedSeats: [Seat] = []
     @State private var showBasket: Bool = false
@@ -85,6 +85,6 @@ struct SeatsChoiceView<T: Movie>: View {
 
 struct SeatsChoiceView_Previews: PreviewProvider {
     static var previews: some View {
-        SeatsChoiceView(movie: Popular.default)
+        SeatsChoiceView(movie: MovieViewModel.default)
     }
 }

@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct TicketView<T: Movie>: View {
+struct TicketView: View {
 
-    var ticket: Ticket<T>
+    var ticket: Ticket
     var seat = Seat.default
    
     var body: some View {
@@ -36,6 +36,6 @@ struct TicketView<T: Movie>: View {
 
 struct TicketView_Previews: PreviewProvider {
     static var previews: some View {
-        TicketView<Popular>(ticket: Ticket<Popular>.default)
+        TicketView(ticket: Ticket.default)
     }
 }

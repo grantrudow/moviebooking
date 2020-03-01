@@ -8,48 +8,44 @@
 
 import SwiftUI
 
-struct MovieDetailView<T: Movie>: View {
+struct MovieDetailView: View {
     
-    var movie: T
-    
-    @State private var showSeats: Bool = false
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            createTitle()
-            LineRatingView(value: movie.rating)
-            createGenreList()
+     var movie: MovieViewModel
+        
+   @State private var showSeats: Bool = false
+        
+        var body: some View {
             
-            HStack {
-                Text(self.movie.releaseDate)
-                    .foregroundColor(Color.gray)
-                Spacer()
-                Text(self.movie.runtime)
-                    .foregroundColor(Color.gray)
-            }
-            .padding(.vertical)
-            
-            createDescription()
-            createChooseSeatButton()
+           return VStack(alignment: .leading) {
+                createTitle()
+                LineRatingView(value: movie.voteAverage)
+                createGenreList()
+//
+                HStack {
+                    Text(self.movie.releaseDate).foregroundColor(Color.gray)
+                    Spacer()
+                    Text(self.movie.runtime ).foregroundColor(Color.gray)
+                }.padding(.vertical)
+//
+                createDescription()
+                createChooseSeatButton()
+                
+                
+            }.padding(.horizontal).padding(.bottom, 20)
         }
-        .padding(.horizontal)
-        .padding(.bottom, 20)
-        
-        
-        
-    }
     
     fileprivate func createTitle() -> some View {
         return Text(self.movie.title)
-            .font(.system(size: 35, weight: .black, design: .rounded))
-            .layoutPriority(1)
-            .multilineTextAlignment(.leading)
-            .lineLimit(nil)
+        .font(.system(size: 35, weight : .black, design: .rounded))
+        .layoutPriority(1)
+        .multilineTextAlignment(.leading)
+        .lineLimit(nil)
     }
     
     fileprivate func createGenreList() -> some View {
-        return ScrollView(.horizontal) {
-            HStack {
+        
+        return ScrollView(.horizontal, showsIndicators: false) {
+            HStack{
                 ForEach(self.movie.genres, id: \.self){ genre in
                     Text(genre)
                         .bold()
@@ -57,30 +53,22 @@ struct MovieDetailView<T: Movie>: View {
                         .background(Color.lightGray)
                         .cornerRadius(10)
                         .foregroundColor(Color.gray)
+
                 }
             }
         }
     }
     
     fileprivate func createDescription() -> some View {
-        return Text(self.movie.description)
-            .lineLimit(nil)
-            .font(.body)
+        return Text(self.movie.overview).lineLimit(nil).font(.body)
     }
     
     fileprivate func createChooseSeatButton() -> some View {
         return LCButton(text: "Choose seats") {
             self.showSeats.toggle()
-        }
-        .sheet(isPresented: self.$showSeats) {
+        }.sheet(isPresented: self.$showSeats) {
             SeatsChoiceView(movie: self.movie)
-        }
-        .padding(.vertical)
+        }.padding(.vertical)
     }
 }
 
-struct MovieDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieDetailView<Popular>(movie: Popular.default)
-    }
-}
