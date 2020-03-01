@@ -73,6 +73,22 @@
 		52A0419423B5E4F10068E4BB /* frozen2_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52A0415A23B5E4F00068E4BB /* frozen2_land.jpg */; };
 		52A0419523B5E4F10068E4BB /* garrison7_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52A0415B23B5E4F00068E4BB /* garrison7_land.jpg */; };
 		52A0419623B5E4F10068E4BB /* cats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52A0415C23B5E4F00068E4BB /* cats.jpg */; };
+		60739ABB240B21D9005C1ECA /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739ABA240B21D9005C1ECA /* BasketView.swift */; };
+		60739ABD240B2322005C1ECA /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739ABC240B2322005C1ECA /* Ticket.swift */; };
+		60739ABF240B2396005C1ECA /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739ABE240B2396005C1ECA /* TicketView.swift */; };
+		60739AC1240B24B5005C1ECA /* TopTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AC0240B24B5005C1ECA /* TopTicketView.swift */; };
+		60739AC3240B24BE005C1ECA /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AC2240B24BE005C1ECA /* TicketDetailView.swift */; };
+		60739AC5240B24D0005C1ECA /* BottomTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AC4240B24D0005C1ECA /* BottomTicketView.swift */; };
+		60739AC7240B24E0005C1ECA /* DashedSeperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AC6240B24E0005C1ECA /* DashedSeperator.swift */; };
+		60739AC9240B24E6005C1ECA /* TicketShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AC8240B24E6005C1ECA /* TicketShape.swift */; };
+		60739ACB240B4821005C1ECA /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739ACA240B4821005C1ECA /* PaymentView.swift */; };
+		60739ACD240B48D5005C1ECA /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739ACC240B48D5005C1ECA /* PaymentMethod.swift */; };
+		60739ACF240BF3AA005C1ECA /* LCTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739ACE240BF3AA005C1ECA /* LCTextfield.swift */; };
+		60739AD1240BF9ED005C1ECA /* OkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AD0240BF9ED005C1ECA /* OkView.swift */; };
+		60739AD3240BF9F3005C1ECA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AD2240BF9F3005C1ECA /* LoadingView.swift */; };
+		60739AD5240BFAA2005C1ECA /* OkShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AD4240BFAA2005C1ECA /* OkShape.swift */; };
+		60739AD7240BFC89005C1ECA /* AnyTransitionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AD6240BFC89005C1ECA /* AnyTransitionExt.swift */; };
+		60739AD9240BFFC1005C1ECA /* NotificationCenterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60739AD8240BFFC1005C1ECA /* NotificationCenterExt.swift */; };
 		609E75F3240ADA01005BE106 /* SingleMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E75F2240ADA01005BE106 /* SingleMovieView.swift */; };
 		609E75F6240ADD3A005BE106 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E75F5240ADD3A005BE106 /* MovieDetailView.swift */; };
 		609E75F8240ADF25005BE106 /* LCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E75F7240ADF25005BE106 /* LCButton.swift */; };
@@ -173,6 +189,22 @@
 		52A0415A23B5E4F00068E4BB /* frozen2_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frozen2_land.jpg; sourceTree = "<group>"; };
 		52A0415B23B5E4F00068E4BB /* garrison7_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = garrison7_land.jpg; sourceTree = "<group>"; };
 		52A0415C23B5E4F00068E4BB /* cats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cats.jpg; sourceTree = "<group>"; };
+		60739ABA240B21D9005C1ECA /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		60739ABC240B2322005C1ECA /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		60739ABE240B2396005C1ECA /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		60739AC0240B24B5005C1ECA /* TopTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTicketView.swift; sourceTree = "<group>"; };
+		60739AC2240B24BE005C1ECA /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
+		60739AC4240B24D0005C1ECA /* BottomTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTicketView.swift; sourceTree = "<group>"; };
+		60739AC6240B24E0005C1ECA /* DashedSeperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedSeperator.swift; sourceTree = "<group>"; };
+		60739AC8240B24E6005C1ECA /* TicketShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketShape.swift; sourceTree = "<group>"; };
+		60739ACA240B4821005C1ECA /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		60739ACC240B48D5005C1ECA /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		60739ACE240BF3AA005C1ECA /* LCTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCTextfield.swift; sourceTree = "<group>"; };
+		60739AD0240BF9ED005C1ECA /* OkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkView.swift; sourceTree = "<group>"; };
+		60739AD2240BF9F3005C1ECA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		60739AD4240BFAA2005C1ECA /* OkShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkShape.swift; sourceTree = "<group>"; };
+		60739AD6240BFC89005C1ECA /* AnyTransitionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExt.swift; sourceTree = "<group>"; };
+		60739AD8240BFFC1005C1ECA /* NotificationCenterExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExt.swift; sourceTree = "<group>"; };
 		609E75F2240ADA01005BE106 /* SingleMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMovieView.swift; sourceTree = "<group>"; };
 		609E75F5240ADD3A005BE106 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		609E75F7240ADF25005BE106 /* LCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCButton.swift; sourceTree = "<group>"; };
@@ -267,6 +299,8 @@
 			children = (
 				52A0410A23B5E0E50068E4BB /* ColorExt.swift */,
 				609E761C240B0C25005BE106 /* DateExt.swift */,
+				60739AD8240BFFC1005C1ECA /* NotificationCenterExt.swift */,
+				60739AD6240BFC89005C1ECA /* AnyTransitionExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,6 +385,8 @@
 				609E75FB240AE80F005BE106 /* ActorDetailView.swift */,
 				609E75FD240AEA4F005BE106 /* MovieListView.swift */,
 				609E7616240B097B005BE106 /* SeatsChoiceView.swift */,
+				60739ABA240B21D9005C1ECA /* BasketView.swift */,
+				60739ACA240B4821005C1ECA /* PaymentView.swift */,
 				609E7603240AEEAA005BE106 /* ActorListView.swift */,
 			);
 			path = Screens;
@@ -364,9 +400,16 @@
 				609E75FF240AEAD4005BE106 /* MovieListRow.swift */,
 				609E7610240B080B005BE106 /* ChairLegend.swift */,
 				609E760E240B03B4005BE106 /* ChairView.swift */,
+				60739ABE240B2396005C1ECA /* TicketView.swift */,
+				60739AD0240BF9ED005C1ECA /* OkView.swift */,
+				60739AD2240BF9F3005C1ECA /* LoadingView.swift */,
+				60739AC0240B24B5005C1ECA /* TopTicketView.swift */,
+				60739AC2240B24BE005C1ECA /* TicketDetailView.swift */,
+				60739AC4240B24D0005C1ECA /* BottomTicketView.swift */,
 				609E7601240AEE97005BE106 /* ActorListRow.swift */,
 				609E75F9240ADFC0005BE106 /* LineRatingView.swift */,
 				609E75F7240ADF25005BE106 /* LCButton.swift */,
+				60739ACE240BF3AA005C1ECA /* LCTextfield.swift */,
 				609E761E240B11F5005BE106 /* DateView.swift */,
 				609E7622240B179D005BE106 /* TimeView.swift */,
 				609E761A240B0BAE005BE106 /* DateTimeView.swift */,
@@ -379,6 +422,9 @@
 			children = (
 				609E760A240AF34B005BE106 /* ScreenShape.swift */,
 				609E7620240B1315005BE106 /* DateShape.swift */,
+				60739AC6240B24E0005C1ECA /* DashedSeperator.swift */,
+				60739AD4240BFAA2005C1ECA /* OkShape.swift */,
+				60739AC8240B24E6005C1ECA /* TicketShape.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -387,8 +433,10 @@
 			isa = PBXGroup;
 			children = (
 				60B3AAC32407F32E003156BF /* MovieBundle.swift */,
+				60739ABC240B2322005C1ECA /* Ticket.swift */,
 				609E7607240AF2D6005BE106 /* Seat.swift */,
 				609E7618240B09B9005BE106 /* TicketDate.swift */,
+				60739ACC240B48D5005C1ECA /* PaymentMethod.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -548,35 +596,51 @@
 				60B3AACA2407F5D2003156BF /* MovieCollectionView.swift in Sources */,
 				609E7617240B097B005BE106 /* SeatsChoiceView.swift in Sources */,
 				609E7608240AF2D6005BE106 /* Seat.swift in Sources */,
+				60739ABB240B21D9005C1ECA /* BasketView.swift in Sources */,
 				60B3AAD2240AB73E003156BF /* UpcomingCell.swift in Sources */,
+				60739ABF240B2396005C1ECA /* TicketView.swift in Sources */,
 				60B3AAC42407F32E003156BF /* MovieBundle.swift in Sources */,
 				60B3AAD0240AB4E8003156BF /* ActorCell.swift in Sources */,
 				52A040F623B5DF6F0068E4BB /* AppDelegate.swift in Sources */,
 				609E75F6240ADD3A005BE106 /* MovieDetailView.swift in Sources */,
 				609E75FA240ADFC0005BE106 /* LineRatingView.swift in Sources */,
 				52A0410B23B5E0E50068E4BB /* ColorExt.swift in Sources */,
+				60739AC5240B24D0005C1ECA /* BottomTicketView.swift in Sources */,
+				60739ABD240B2322005C1ECA /* Ticket.swift in Sources */,
+				60739AD1240BF9ED005C1ECA /* OkView.swift in Sources */,
 				609E7600240AEAD4005BE106 /* MovieListRow.swift in Sources */,
 				609E7602240AEE97005BE106 /* ActorListRow.swift in Sources */,
 				60B3AAD4240ABC95003156BF /* HeaderView.swift in Sources */,
 				52A040F823B5DF6F0068E4BB /* SceneDelegate.swift in Sources */,
 				609E75FE240AEA4F005BE106 /* MovieListView.swift in Sources */,
+				60739AD7240BFC89005C1ECA /* AnyTransitionExt.swift in Sources */,
 				60B3AACE240AB178003156BF /* PopularCell.swift in Sources */,
 				609E761D240B0C25005BE106 /* DateExt.swift in Sources */,
+				60739AC7240B24E0005C1ECA /* DashedSeperator.swift in Sources */,
+				60739AC9240B24E6005C1ECA /* TicketShape.swift in Sources */,
 				609E7611240B080B005BE106 /* ChairLegend.swift in Sources */,
 				609E760F240B03B4005BE106 /* ChairView.swift in Sources */,
 				609E75F8240ADF25005BE106 /* LCButton.swift in Sources */,
 				609E75F3240ADA01005BE106 /* SingleMovieView.swift in Sources */,
+				60739AD9240BFFC1005C1ECA /* NotificationCenterExt.swift in Sources */,
 				609E7604240AEEAA005BE106 /* ActorListView.swift in Sources */,
 				609E761F240B11F5005BE106 /* DateView.swift in Sources */,
+				60739AC1240B24B5005C1ECA /* TopTicketView.swift in Sources */,
+				60739ACB240B4821005C1ECA /* PaymentView.swift in Sources */,
+				60739ACF240BF3AA005C1ECA /* LCTextfield.swift in Sources */,
 				609E7606240AF1C0005BE106 /* TheaterView.swift in Sources */,
 				609E7621240B1315005BE106 /* DateShape.swift in Sources */,
 				609E7623240B179D005BE106 /* TimeView.swift in Sources */,
+				60739AC3240B24BE005C1ECA /* TicketDetailView.swift in Sources */,
 				52A040FA23B5DF6F0068E4BB /* MovieBookingApp.swift in Sources */,
 				609E760B240AF34B005BE106 /* ScreenShape.swift in Sources */,
+				60739ACD240B48D5005C1ECA /* PaymentMethod.swift in Sources */,
 				609E7619240B09B9005BE106 /* TicketDate.swift in Sources */,
+				60739AD5240BFAA2005C1ECA /* OkShape.swift in Sources */,
 				60B3AAC72407F3F5003156BF /* MovieViewModel.swift in Sources */,
 				609E75FC240AE80F005BE106 /* ActorDetailView.swift in Sources */,
 				609E761B240B0BAE005BE106 /* DateTimeView.swift in Sources */,
+				60739AD3240BF9F3005C1ECA /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

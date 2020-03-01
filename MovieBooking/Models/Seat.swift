@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Seat: Identifiable {
     var id: UUID
     var row: Int
